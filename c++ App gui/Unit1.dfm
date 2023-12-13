@@ -87,11 +87,17 @@ object Form1: TForm1
     TabOrder = 4
   end
   object Button2: TButton
-    Left = 696
+    Left = 672
     Top = 344
     Width = 105
     Height = 73
     Caption = '0'
     TabOrder = 5
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 904
+    Top = 584
   end
 end

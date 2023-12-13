@@ -24,7 +24,9 @@ __published:	// Composants gérés par l'EDI
 	TLabel *Temp;
 	TLabel *Humid;
 	TLabel *press;
+	TTimer *Timer1;
 	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall Timer1Timer(TObject *Sender);
 private:	// Déclarations utilisateur
 	std::string IPServ;
 public:		// Déclarations utilisateur
