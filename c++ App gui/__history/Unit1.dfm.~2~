@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 409
+  ClientWidth = 986
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Bevel1: TBevel
+    Left = 552
+    Top = 80
+    Width = 393
+    Height = 257
+  end
+  object Button1: TButton
+    Left = 40
+    Top = 24
+    Width = 361
+    Height = 33
+    Caption = 'Liste'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object RichEdit1: TRichEdit
+    Left = 40
+    Top = 80
+    Width = 361
+    Height = 257
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'RichEdit1')
+    ParentFont = False
+    TabOrder = 1
+    Zoom = 100
+  end
+  object Button2: TButton
+    Left = 552
+    Top = 24
+    Width = 393
+    Height = 33
+    Caption = 'Jsp'
+    TabOrder = 2
+  end
+end

@@ -1,0 +1,420 @@
+{
+  "1": {
+    "config": {
+      "configured": true,
+      "on": true,
+      "sunriseoffset": 30,
+      "sunsetoffset": -30
+    },
+    "etag": "3ee3532723f638baad78417ae00654f4",
+    "manufacturername": "Philips",
+    "modelid": "PHDL00",
+    "name": "Daylight",
+    "state": {
+      "dark": false,
+      "daylight": false,
+      "lastupdated": "2023-12-07T07:34:12.673",
+      "status": 150,
+      "sunrise": "2023-12-07T07:30:14",
+      "sunset": "2023-12-07T15:56:02"
+    },
+    "swversion": "1.0",
+    "type": "Daylight",
+    "uniqueid": "00:21:2e:ff:ff:06:dd:aa-01"
+  },
+  "11": {
+    "config": {
+      "battery": 98,
+      "duration": 12,
+      "on": true,
+      "reachable": true,
+      "temperature": 2500
+    },
+    "ep": 1,
+    "etag": "09962c7c22fe976eed2db4ad8ecfc103",
+    "lastannounced": null,
+    "lastseen": "2023-12-06T10:17Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.sensor_motion.aq2",
+    "name": "Presence A6-1",
+    "state": {
+      "lastupdated": "2023-11-10T10:17:06.872",
+      "presence": false
+    },
+    "swversion": "3000-0001",
+    "type": "ZHAPresence",
+    "uniqueid": "00:15:8d:00:07:c4:a4:13-01-0406"
+  },
+  "12": {
+    "config": {
+      "battery": 98,
+      "on": true,
+      "reachable": true,
+      "tholddark": 12000,
+      "tholdoffset": 7000
+    },
+    "ep": 1,
+    "etag": "09962c7c22fe976eed2db4ad8ecfc103",
+    "lastannounced": null,
+    "lastseen": "2023-12-06T10:17Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.sensor_motion.aq2",
+    "name": "Presence A6-1",
+    "state": {
+      "dark": true,
+      "daylight": true,
+      "lastupdated": "2023-11-07T13:50:06.450",
+      "lightlevel": 20213,
+      "lux": 105
+    },
+    "swversion": "3000-0001",
+    "type": "ZHALightLevel",
+    "uniqueid": "00:15:8d:00:07:c4:a4:13-01-0400"
+  },
+  "17": {
+    "config": {
+      "duration": 60,
+      "on": true,
+      "reachable": true
+    },
+    "etag": "36696fae88e5e59e863f6164b3a514ad",
+    "manufacturername": "Phoscon",
+    "modelid": "PHOSCON_VPIR",
+    "name": "VPIR Mouvement A7",
+    "state": {
+      "lastupdated": "2023-11-09T14:43:50.606",
+      "presence": false
+    },
+    "swversion": "1.0",
+    "type": "CLIPPresence",
+    "uniqueid": "vpir-1699455064749"
+  },
+  "18": {
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "etag": "e20a95cf2193c9d225f03fd716a33699",
+    "manufacturername": "Phoscon",
+    "modelid": "PHOSCON_FSM_STATE",
+    "name": "FSM_STATE Mouvement A7",
+    "state": {
+      "lastupdated": "2023-12-06T10:17:41.500",
+      "status": 0
+    },
+    "swversion": "1.0",
+    "type": "CLIPGenericStatus",
+    "uniqueid": "fsm-state-1699455064749"
+  },
+  "2": {
+    "config": {
+      "battery": 100,
+      "offset": 0,
+      "on": true,
+      "reachable": true
+    },
+    "ep": 1,
+    "etag": "6edae1bbda685fb949a0e2d1d85ec3a7",
+    "lastannounced": null,
+    "lastseen": "2023-12-06T10:17Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.weather",
+    "name": "Temp A6-1",
+    "state": {
+      "lastupdated": "2023-11-07T13:50:11.879",
+      "temperature": 2009
+    },
+    "swversion": "0.0.0_0005",
+    "type": "ZHATemperature",
+    "uniqueid": "00:15:8d:00:08:df:bc:67-01-0402"
+  },
+  "21": {
+    "config": {
+      "duration": 60,
+      "on": true,
+      "reachable": true
+    },
+    "etag": "e20a95cf2193c9d225f03fd716a33699",
+    "manufacturername": "Phoscon",
+    "modelid": "PHOSCON_VPIR",
+    "name": "VPIR Mouvement A6",
+    "state": {
+      "lastupdated": "2023-11-09T14:43:38.772",
+      "presence": false
+    },
+    "swversion": "1.0",
+    "type": "CLIPPresence",
+    "uniqueid": "vpir-1699459029014"
+  },
+  "22": {
+    "config": {
+      "on": true,
+      "reachable": true
+    },
+    "etag": "3270c1bc7dd39ac39c0a2157aebb2b1a",
+    "manufacturername": "Phoscon",
+    "modelid": "PHOSCON_FSM_STATE",
+    "name": "FSM_STATE Mouvement A6",
+    "state": {
+      "lastupdated": "2023-12-06T10:17:41.502",
+      "status": 0
+    },
+    "swversion": "1.0",
+    "type": "CLIPGenericStatus",
+    "uniqueid": "fsm-state-1699459029014"
+  },
+  "27": {
+    "config": {
+      "battery": 95,
+      "on": true,
+      "reachable": true,
+      "tholddark": 12000,
+      "tholdoffset": 7000
+    },
+    "ep": 1,
+    "etag": "7a489110fba32693bf9c57956e0b979a",
+    "lastannounced": null,
+    "lastseen": "2023-12-07T07:40Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.sensor_motion.aq2",
+    "name": "Presence A7-1",
+    "state": {
+      "dark": false,
+      "daylight": false,
+      "lastupdated": "2023-12-07T07:40:51.247",
+      "lightlevel": 12305,
+      "lux": 17
+    },
+    "swversion": "3000-0001",
+    "type": "ZHALightLevel",
+    "uniqueid": "00:15:8d:00:07:be:e2:c6-01-0400"
+  },
+  "28": {
+    "config": {
+      "battery": 95,
+      "duration": 10,
+      "on": true,
+      "reachable": true,
+      "temperature": 2600
+    },
+    "ep": 1,
+    "etag": "8883d60d4051bf8b3ebb547549e59908",
+    "lastannounced": null,
+    "lastseen": "2023-12-07T07:40Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.sensor_motion.aq2",
+    "name": "Presence A7-1",
+    "state": {
+      "lastupdated": "2023-12-07T07:41:01.270",
+      "presence": false
+    },
+    "swversion": "3000-0001",
+    "type": "ZHAPresence",
+    "uniqueid": "00:15:8d:00:07:be:e2:c6-01-0406"
+  },
+  "3": {
+    "config": {
+      "battery": 100,
+      "offset": 0,
+      "on": true,
+      "reachable": true
+    },
+    "ep": 1,
+    "etag": "6edae1bbda685fb949a0e2d1d85ec3a7",
+    "lastannounced": null,
+    "lastseen": "2023-12-06T10:17Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.weather",
+    "name": "Temp A6-1",
+    "state": {
+      "humidity": 4706,
+      "lastupdated": "2023-11-07T13:50:11.904"
+    },
+    "swversion": "0.0.0_0005",
+    "type": "ZHAHumidity",
+    "uniqueid": "00:15:8d:00:08:df:bc:67-01-0405"
+  },
+  "30": {
+    "config": {
+      "battery": 100,
+      "on": true,
+      "reachable": false,
+      "temperature": 2300
+    },
+    "ep": 1,
+    "etag": "45a5b6576301d4de5b6f79e0960f35df",
+    "lastannounced": "2023-11-10T10:10:25Z",
+    "lastseen": "2023-11-10T10:11Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.sensor_magnet.aq2",
+    "name": "Porte A6-1",
+    "state": {
+      "lastupdated": "2023-11-10T10:12:10.839",
+      "open": false
+    },
+    "swversion": "0.0.0_0003",
+    "type": "ZHAOpenClose",
+    "uniqueid": "00:15:8d:00:08:a9:f1:ce-01-0006"
+  },
+  "31": {
+    "config": {
+      "battery": 100,
+      "duration": 30,
+      "ledindication": false,
+      "on": true,
+      "reachable": true,
+      "sensitivity": 3
+    },
+    "ep": 1,
+    "etag": "17b039b37fd0f5a1307fada554785409",
+    "lastannounced": null,
+    "lastseen": "2023-12-07T07:41Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.motion.ac02",
+    "name": "Presence A6-2",
+    "state": {
+      "lastupdated": "2023-12-07T06:30:20.771",
+      "presence": false
+    },
+    "swversion": "0.0.0_0010",
+    "type": "ZHAPresence",
+    "uniqueid": "54:ef:44:10:00:8f:fb:a1-01-0406"
+  },
+  "32": {
+    "config": {
+      "battery": 100,
+      "ledindication": false,
+      "on": true,
+      "reachable": true,
+      "tholddark": 12000,
+      "tholdoffset": 7000
+    },
+    "ep": 1,
+    "etag": "17b039b37fd0f5a1307fada554785409",
+    "lastannounced": null,
+    "lastseen": "2023-12-07T07:41Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.motion.ac02",
+    "name": "Presence A6-2",
+    "state": {
+      "dark": false,
+      "daylight": false,
+      "lastupdated": "2023-12-07T06:29:50.581",
+      "lightlevel": 17325,
+      "lux": 54
+    },
+    "swversion": "0.0.0_0010",
+    "type": "ZHALightLevel",
+    "uniqueid": "54:ef:44:10:00:8f:fb:a1-01-0400"
+  },
+  "4": {
+    "config": {
+      "battery": 100,
+      "offset": 0,
+      "on": true,
+      "reachable": true
+    },
+    "ep": 1,
+    "etag": "09962c7c22fe976eed2db4ad8ecfc103",
+    "lastannounced": null,
+    "lastseen": "2023-12-06T10:17Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.weather",
+    "name": "Temp A6-1",
+    "state": {
+      "lastupdated": "2023-11-07T13:50:11.933",
+      "pressure": 995
+    },
+    "swversion": "0.0.0_0005",
+    "type": "ZHAPressure",
+    "uniqueid": "00:15:8d:00:08:df:bc:67-01-0403"
+  },
+  "5": {
+    "config": {
+      "battery": 95,
+      "on": false,
+      "reachable": true,
+      "temperature": 2600
+    },
+    "ep": 1,
+    "etag": "2cde88299ccf731e8090a37de5e9f874",
+    "lastannounced": null,
+    "lastseen": "2023-12-07T07:42Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.sensor_magnet.aq2",
+    "name": "Porte_Baie A7-1",
+    "state": {
+      "lastupdated": "2023-12-07T07:42:38.808",
+      "open": false
+    },
+    "swversion": "0.0.0_0003",
+    "type": "ZHAOpenClose",
+    "uniqueid": "00:15:8d:00:04:a9:72:a2-01-0006"
+  },
+  "6": {
+    "config": {
+      "battery": 100,
+      "offset": 0,
+      "on": true,
+      "reachable": true
+    },
+    "ep": 1,
+    "etag": "399c03cb63ea21e4455318966647e716",
+    "lastannounced": null,
+    "lastseen": "2023-12-07T07:35Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.weather",
+    "name": "Temp A7-1",
+    "state": {
+      "lastupdated": "2023-12-07T07:35:09.344",
+      "temperature": 1822
+    },
+    "swversion": "0.0.0_0005",
+    "type": "ZHATemperature",
+    "uniqueid": "00:15:8d:00:08:d0:91:13-01-0402"
+  },
+  "7": {
+    "config": {
+      "battery": 100,
+      "offset": 0,
+      "on": true,
+      "reachable": true
+    },
+    "ep": 1,
+    "etag": "d63c049c3cc050ce0b974e6a3f3b19f3",
+    "lastannounced": null,
+    "lastseen": "2023-12-07T07:35Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.weather",
+    "name": "Temp A7-1",
+    "state": {
+      "humidity": 4371,
+      "lastupdated": "2023-12-07T07:35:09.344"
+    },
+    "swversion": "0.0.0_0005",
+    "type": "ZHAHumidity",
+    "uniqueid": "00:15:8d:00:08:d0:91:13-01-0405"
+  },
+  "8": {
+    "config": {
+      "battery": 100,
+      "offset": 0,
+      "on": true,
+      "reachable": true
+    },
+    "ep": 1,
+    "etag": "f7213fa598939c5f3e8ac43fb7e08ee7",
+    "lastannounced": null,
+    "lastseen": "2023-12-07T07:35Z",
+    "manufacturername": "LUMI",
+    "modelid": "lumi.weather",
+    "name": "Temp A7-1",
+    "state": {
+      "lastupdated": "2023-12-07T07:35:09.345",
+      "pressure": 1012
+    },
+    "swversion": "0.0.0_0005",
+    "type": "ZHAPressure",
+    "uniqueid": "00:15:8d:00:08:d0:91:13-01-0403"
+  }
+}

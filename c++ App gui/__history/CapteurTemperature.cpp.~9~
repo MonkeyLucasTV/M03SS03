@@ -1,0 +1,24 @@
+#include <string>
+
+CapteurTemperature::CapteurTemperature(string IP,string cle,string _nom):Domotique(IP,cle)
+{
+	nom=_nom;
+}
+
+
+std::string CapteurTemperature::Temperature(){
+	jSON.Extraction(GetAppareil("sensors"));
+	return jSON.Valeur
+}
+
+std::string CapteurTemperature::Humidite(){
+}
+
+std::string CapteurTemperature::Pression(){
+}
+
+std::string CapteurTemperature::Type(){
+}
+
+
+
