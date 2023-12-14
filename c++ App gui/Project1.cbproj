@@ -117,6 +117,24 @@
             <DependentOn>CapteurTemperature.h</DependentOn>
             <BuildOrder>3</BuildOrder>
         </CppCompile>
+        <CppCompile Include="Domotique.cpp">
+            <DependentOn>Domotique.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="IRClientTCP.cpp">
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <None Include="IRClientTCP.h">
+            <BuildOrder>6</BuildOrder>
+        </None>
+        <CppCompile Include="IRJSON.cpp">
+            <DependentOn>IRJSON.h</DependentOn>
+            <BuildOrder>7</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="IRJSONExtraction.cpp">
+            <DependentOn>IRJSONExtraction.h</DependentOn>
+            <BuildOrder>8</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Project1.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>

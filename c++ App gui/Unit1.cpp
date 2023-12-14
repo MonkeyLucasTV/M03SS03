@@ -1,8 +1,11 @@
 //---------------------------------------------------------------------------
 
 #include <vcl.h>
+#include "IRClientTCP.h"
 #pragma hdrstop
+#include <iostream>
 #include <string>
+#include "LampeMulticolore.h"
 #include "Domotique.h"
 #include "Unit1.h"
 #include "CapteurTemperature.h"
@@ -25,6 +28,11 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 
 	Timer1->Enabled = true;
 
+	LampeMulticolore LampeListe("172.20.21.22","F276DD7951","Extended Lights 3","3");
+	RichEdit1->Text = LampeListe.ListeLampes().c_str();
+
+
+
 
 
 
@@ -41,6 +49,38 @@ void __fastcall TForm1::Timer1Timer(TObject *Sender)
 	Temp->Caption =  "Temperature : " + UnicodeString(temp.Temperature().c_str());
 	Humid->Caption = "Humidité : "+ UnicodeString(temp.Humidite().c_str());
 	press->Caption = "Pression : "+ UnicodeString(temp.Pression().c_str());
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::TrackBar1Change(TObject *Sender)
+{
+	LampeMulticolore Lampe("172.20.21.22","F276DD7951","Extended Lights 3","3");
+	Lampe.Teinte(AnsiString(TrackBar1->Position).c_str());
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::TrackBar2Change(TObject *Sender)
+{
+	LampeMulticolore Lampe1("172.20.21.22","F276DD7951","Extended Lights 3","3");
+	Lampe1.Intensite(AnsiString(TrackBar2->Position).c_str());
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+
+	LampeMulticolore Lampe2("172.20.21.22","F276DD7951","Extended Lights 3","3");
+
+	if (Button2->Caption == "0") {
+		Lampe2.Allumer("true");
+		Button2->Caption = "1";
+	}
+	else if (Button2->Caption == "1") {
+		Lampe2.Allumer("false");
+		Button2->Caption = "0";
+	}
 
 }
 //---------------------------------------------------------------------------

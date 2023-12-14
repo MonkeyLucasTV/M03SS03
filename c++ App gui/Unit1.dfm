@@ -49,25 +49,25 @@ object Form1: TForm1
   object Edit1: TEdit
     Left = 64
     Top = 46
-    Width = 217
+    Width = 137
     Height = 21
     TabOrder = 0
     Text = '172.20.21.22'
   end
   object Button1: TButton
-    Left = 584
+    Left = 424
     Top = 44
-    Width = 249
+    Width = 153
     Height = 25
-    Caption = 'Scurter'
+    Caption = 'Scruter'
     TabOrder = 1
     OnClick = Button1Click
   end
   object Edit2: TEdit
-    Left = 336
+    Left = 230
     Top = 46
     Width = 161
-    Height = 23
+    Height = 21
     ReadOnly = True
     TabOrder = 2
     Text = 'F276DD7951'
@@ -77,14 +77,18 @@ object Form1: TForm1
     Top = 184
     Width = 385
     Height = 45
+    Max = 65535
     TabOrder = 3
+    OnChange = TrackBar1Change
   end
   object TrackBar2: TTrackBar
     Left = 520
     Top = 264
     Width = 385
     Height = 45
+    Max = 255
     TabOrder = 4
+    OnChange = TrackBar2Change
   end
   object Button2: TButton
     Left = 672
@@ -93,6 +97,38 @@ object Form1: TForm1
     Height = 73
     Caption = '0'
     TabOrder = 5
+    OnClick = Button2Click
+  end
+  object ComboBox1: TComboBox
+    Left = 816
+    Top = 44
+    Width = 89
+    Height = 21
+    TabOrder = 6
+  end
+  object Edit3: TEdit
+    Left = 600
+    Top = 44
+    Width = 177
+    Height = 23
+    ReadOnly = True
+    TabOrder = 7
+  end
+  object RichEdit1: TRichEdit
+    Left = 97
+    Top = 73
+    Width = 497
+    Height = 585
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Lines.Strings = (
+      'RichEdit1')
+    ParentFont = False
+    TabOrder = 8
+    Zoom = 100
   end
   object Timer1: TTimer
     Enabled = False

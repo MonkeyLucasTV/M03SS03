@@ -25,8 +25,14 @@ __published:	// Composants gérés par l'EDI
 	TLabel *Humid;
 	TLabel *press;
 	TTimer *Timer1;
+	TComboBox *ComboBox1;
+	TEdit *Edit3;
+	TRichEdit *RichEdit1;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Timer1Timer(TObject *Sender);
+	void __fastcall TrackBar1Change(TObject *Sender);
+	void __fastcall TrackBar2Change(TObject *Sender);
+	void __fastcall Button2Click(TObject *Sender);
 private:	// Déclarations utilisateur
 	std::string IPServ;
 public:		// Déclarations utilisateur
