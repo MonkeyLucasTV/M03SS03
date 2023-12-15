@@ -27,14 +27,7 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 {
 
 	Timer1->Enabled = true;
-
-	LampeMulticolore LampeListe("172.20.21.22","F276DD7951","Extended Lights 3","3");
-	RichEdit1->Text = LampeListe.ListeLampes().c_str();
-
-
-
-
-
+	
 
 
 }
@@ -80,6 +73,21 @@ void __fastcall TForm1::Button2Click(TObject *Sender)
 	else if (Button2->Caption == "1") {
 		Lampe2.Allumer("false");
 		Button2->Caption = "0";
+	}
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::ComboBox1Change(TObject *Sender)
+{
+	int NmbreL = ComboBox1->ItemIndex;
+	if (NmbreL== 0) {
+		LampeMulticolore LampeListe("172.20.21.22","F276DD7951","Extended Lights 3","3");
+		Edit3->Text = "Extended Lights 3";
+	}
+	else if (NmbreL == 1) {
+		LampeMulticolore LampeListe("172.20.21.22","F276DD7951","Extended Lights 4","4");
+    	Edit3->Text = "Extended Lights 4";
 	}
 
 }

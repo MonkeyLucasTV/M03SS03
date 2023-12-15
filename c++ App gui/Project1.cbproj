@@ -135,6 +135,10 @@
             <DependentOn>IRJSONExtraction.h</DependentOn>
             <BuildOrder>8</BuildOrder>
         </CppCompile>
+        <CppCompile Include="LampeMulticolore.cpp">
+            <DependentOn>LampeMulticolore.h</DependentOn>
+            <BuildOrder>9</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Project1.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>

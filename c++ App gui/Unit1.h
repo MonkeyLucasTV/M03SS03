@@ -33,6 +33,7 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall TrackBar1Change(TObject *Sender);
 	void __fastcall TrackBar2Change(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
+	void __fastcall ComboBox1Change(TObject *Sender);
 private:	// Déclarations utilisateur
 	std::string IPServ;
 public:		// Déclarations utilisateur

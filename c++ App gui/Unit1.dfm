@@ -105,12 +105,16 @@ object Form1: TForm1
     Width = 89
     Height = 21
     TabOrder = 6
+    OnChange = ComboBox1Change
+    Items.Strings = (
+      '3'
+      '4')
   end
   object Edit3: TEdit
     Left = 600
     Top = 44
     Width = 177
-    Height = 23
+    Height = 21
     ReadOnly = True
     TabOrder = 7
   end
