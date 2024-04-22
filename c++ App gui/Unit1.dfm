@@ -68,7 +68,6 @@ object Form1: TForm1
     Top = 46
     Width = 161
     Height = 21
-    ReadOnly = True
     TabOrder = 2
     Text = 'F276DD7951'
   end
