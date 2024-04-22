@@ -12,7 +12,7 @@
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
-__published:	// Composants gérés par l'EDI
+__published:	// Composants gï¿½rï¿½s par l'EDI
 	TBevel *Bevel1;
 	TEdit *Edit1;
 	TButton *Button1;
@@ -34,9 +34,9 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall TrackBar2Change(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall ComboBox1Change(TObject *Sender);
-private:	// Déclarations utilisateur
+private:	// Dï¿½clarations utilisateur
 	std::string IPServ;
-public:		// Déclarations utilisateur
+public:		// Dï¿½clarations utilisateur
 	__fastcall TForm1(TComponent* Owner);
 };
 //---------------------------------------------------------------------------

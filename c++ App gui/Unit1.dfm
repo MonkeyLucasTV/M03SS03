@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 655
+  ClientHeight = 643
   ClientWidth = 986
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -119,11 +119,11 @@ object Form1: TForm1
     TabOrder = 7
   end
   object RichEdit1: TRichEdit
-    Left = 97
-    Top = 73
-    Width = 497
-    Height = 585
-    Font.Charset = ANSI_CHARSET
+    Left = 64
+    Top = 512
+    Width = 841
+    Height = 98
+    Font.Charset = 254
     Font.Color = clWindowText
     Font.Height = -11
     Font.Name = 'Tahoma'
@@ -137,7 +137,7 @@ object Form1: TForm1
   object Timer1: TTimer
     Enabled = False
     OnTimer = Timer1Timer
-    Left = 904
-    Top = 584
+    Left = 936
+    Top = 576
   end
 end
