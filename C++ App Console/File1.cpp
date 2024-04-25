@@ -13,16 +13,21 @@ int main(){
 
 	char reponse[10000];
 	std::string AddrIP;
+	std::string CleAPI;
 
 	std::cout << "Entrez l'adresse IP : ";
 	std::cin >> AddrIP;
+	std::cout << std::endl;
+
+	std::cout << "Entrez la cle API : ";
+	std::cin >> CleAPI;
 	std::cout << std::endl;
 
 
 	passDomo.SeConnecterAUnServeur(AddrIP,80);
 
 
-	std::string requete ="GET /api/F276DD7951/sensors HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n";
+	std::string requete ="GET /api/"+CleAPI+"/sensors HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n";
 
 //
 //	std::string requeteLampe ="PUT /api/F276DD7951/lights/3/state HTTP/1.1\r\nHost: 172.20.21.5\r\nConnection: keep-alive\r\n\r\n";
@@ -56,7 +61,7 @@ int main(){
 	  std::string repString;
 
 	if (input == 1) {
-			std::string requeteLampe ="PUT /api/F276DD7951/lights/3/state HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n{\"on\": true}";
+			std::string requeteLampe ="PUT /api/"+CleAPI+"/lights/3/state HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n{\"on\": true}";
 			passDomo.Envoyer(requeteLampe.c_str(),requeteLampe.length());
 		passDomo.Recevoir(rep2, 1000);
 
@@ -64,7 +69,7 @@ int main(){
 		repString = rep2;
 	}
 	else if (input == 2) {
-				   std::string requeteLampe ="PUT /api/F276DD7951/lights/3/state HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n{\"on\": false}";
+				   std::string requeteLampe ="PUT /api/"+CleAPI+"32/lights/3/state HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n{\"on\": false}";
                    passDomo.Envoyer(requeteLampe.c_str(),requeteLampe.length());
 					passDomo.Recevoir(rep2, 1000);
 
