@@ -12,8 +12,14 @@ int main(){
 
 
 	char reponse[10000];
+	std::string AddrIP;
 
-	passDomo.SeConnecterAUnServeur("172.20.21.22",80);
+	std::cout << "Entrez l'adresse IP : ";
+	std::cin >> AddrIP;
+	std::cout << std::endl;
+
+
+	passDomo.SeConnecterAUnServeur(AddrIP,80);
 
 
 	std::string requete ="GET /api/F276DD7951/sensors HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n";

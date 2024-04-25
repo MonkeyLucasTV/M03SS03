@@ -12,11 +12,17 @@ int main(){
 
 
 	char reponse[10000];
+	std::string AddrIP;
 
-	passDomo.SeConnecterAUnServeur("172.20.21.5",80);
+	std::cout << "Entrez l'adresse IP : ";
+	std::cin >> AddrIP;
+	std::cout << std::endl;
 
 
-	std::string requete ="GET /api/F276DD7951/sensors HTTP/1.1\r\nHost: 172.20.21.5\r\nConnection: keep-alive\r\n\r\n";
+	passDomo.SeConnecterAUnServeur("172.20.21.22",80);
+
+
+	std::string requete ="GET /api/F276DD7951/sensors HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n";
 
 //
 //	std::string requeteLampe ="PUT /api/F276DD7951/lights/3/state HTTP/1.1\r\nHost: 172.20.21.5\r\nConnection: keep-alive\r\n\r\n";
@@ -37,7 +43,7 @@ int main(){
 
 	int debutDonnee = reponseString.find("\r\n\r\n", 0);
 	reponseString= reponseString.substr(debutDonnee+4);
-
+    std::string repString;
 
 
 	char rep2[1000];
@@ -47,22 +53,28 @@ int main(){
        int input;
 	  std::cout << "choisissez 1 pour allumer 2 pour eteindre et ailleurs pour quitter)";
 	  std::cin >> input;
+	  std::string repString;
 
 	if (input == 1) {
-			std::string requeteLampe ="PUT /api/F276DD7951/lights/3/state HTTP/1.1\r\nHost: 172.20.21.5\r\nConnection: keep-alive\r\n\r\n{\"on\": true}";
+			std::string requeteLampe ="PUT /api/F276DD7951/lights/3/state HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n{\"on\": true}";
+			passDomo.Envoyer(requeteLampe.c_str(),requeteLampe.length());
+		passDomo.Recevoir(rep2, 1000);
+
+		std::cout << '\n' << '\n' << rep2 ;
+		repString = rep2;
 	}
 	else if (input == 2) {
-				   std::string requeteLampe ="PUT /api/F276DD7951/lights/3/state HTTP/1.1\r\nHost: 172.20.21.5\r\nConnection: keep-alive\r\n\r\n{\"on\": false}";
+				   std::string requeteLampe ="PUT /api/F276DD7951/lights/3/state HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n{\"on\": false}";
+                   passDomo.Envoyer(requeteLampe.c_str(),requeteLampe.length());
+					passDomo.Recevoir(rep2, 1000);
 
+					std::cout << '\n' << '\n' << rep2 ;
+					repString = rep2;
 		 }
 	else{
         break;
     }
-		passDomo.Envoyer(requeteLampe.c_str(),requeteLampe.length());
-		passDomo.Recevoir(rep2, 1000);
 
-		std::cout << '\n' << '\n' << rep2 ;
-		std::string repString = rep2;
 
 	}
 //
@@ -76,11 +88,10 @@ int main(){
 //   	std::cout << reponseString ;
  // std::cout << reponseString;
 
-	std::string repStrTot = reponseString + repString;
-	std::cout << repStrTot << '\n';
+	std::cout << repString << '\n';
 
 	IRJSONExtraction jSON;
-	jSON.Extraction(repStrTot);
+	jSON.Extraction(repString);
 
 
 	std::string jsonDescription = jSON.Description();
