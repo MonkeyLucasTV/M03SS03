@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/12/07 09:03:26.000.656,=C:\Users\lpokrywa\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/12/07 09:03:26.000.668,=C:\Users\lpokrywa\Documents\Embarcadero\Studio\Projets\File1.cpp</Transaction>
+    <Transaction>2023/12/07 09:03:40.000.422,C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\File1.cpp=C:\Users\lpokrywa\Documents\Embarcadero\Studio\Projets\File1.cpp</Transaction>
+    <Transaction>2023/12/07 09:03:42.000.268,C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\Project1PCH1.h=C:\Users\lpokrywa\Documents\Embarcadero\Studio\Projets\Project1PCH1.h</Transaction>
+    <Transaction>2023/12/07 09:03:43.000.497,C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\Project1.cbproj=C:\Users\lpokrywa\Documents\Embarcadero\Studio\Projets\Project1.cbproj</Transaction>
+    <Transaction>2023/12/07 09:04:19.000.775,=C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\File2.cpp</Transaction>
+    <Transaction>2023/12/07 09:04:39.000.210,C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\main.cpp=C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\File2.cpp</Transaction>
+    <Transaction>2023/12/07 09:22:04.000.773,=C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\IRClientTCP.cpp</Transaction>
+    <Transaction>2023/12/07 09:22:18.000.779,=C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\IRClientTCP.h</Transaction>
+    <Transaction>2023/12/07 11:00:33.000.845,C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\main.cpp=</Transaction>
+    <Transaction>2023/12/07 11:40:39.000.912,=C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\IRJSON.cpp</Transaction>
+    <Transaction>2023/12/07 11:40:39.000.928,=C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\IRJSONExtraction.cpp</Transaction>
+    <Transaction>2023/12/08 16:40:24.000.376,C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\Project1.cbproj=C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\Project1.cbproj</Transaction>
+    <Transaction>2023/12/13 15:12:31.000.903,=C:\Users\lpokrywa\Desktop\M03SS03\C++ App Console\Domotique.cpp</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="File1.cpp"/>
+    <File Path="IRClientTCP.cpp"/>
+    <File Path="IRClientTCP.h"/>
+    <File Path="IRJSON.cpp"/>
+    <File Path="IRJSON.cpp"/>
+    <File Path="IRJSON.h"/>
+    <File Path="IRJSONExtraction.cpp"/>
+    <File Path="IRJSONExtraction.cpp"/>
+    <File Path="IRJSONExtraction.h"/>
+    <File Path="Project1PCH1.h"/>
+    <File Path="Domotique.cpp"/>
+    <File Path="Domotique.cpp"/>
+    <File Path="Domotique.h"/>
+  </ProjectSortOrder>
+</BorlandProject>

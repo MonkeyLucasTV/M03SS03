@@ -46,13 +46,27 @@ object Form1: TForm1
     Height = 13
     Caption = 'Pression :'
   end
+  object Label1: TLabel
+    Left = 691
+    Top = 245
+    Width = 43
+    Height = 13
+    Caption = 'Intensit'#233
+  end
+  object Label2: TLabel
+    Left = 704
+    Top = 165
+    Width = 30
+    Height = 13
+    Caption = 'Teinte'
+  end
   object Edit1: TEdit
     Left = 64
     Top = 46
     Width = 137
     Height = 21
     TabOrder = 0
-    Text = '172.20.21.22'
+    Text = '172.20.21.7'
   end
   object Button1: TButton
     Left = 424
@@ -69,7 +83,7 @@ object Form1: TForm1
     Width = 161
     Height = 21
     TabOrder = 2
-    Text = 'F276DD7951'
+    Text = '988FB76B99'
   end
   object TrackBar1: TTrackBar
     Left = 520
@@ -106,6 +120,8 @@ object Form1: TForm1
     TabOrder = 6
     OnChange = ComboBox1Change
     Items.Strings = (
+      '1'
+      '2'
       '3'
       '4')
   end
@@ -122,14 +138,14 @@ object Form1: TForm1
     Top = 512
     Width = 841
     Height = 98
-    Font.Charset = 254
+    Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
-    Lines.Strings = (
-      'RichEdit1')
     ParentFont = False
+    PlainText = True
+    ScrollBars = ssVertical
     TabOrder = 8
     Zoom = 100
   end

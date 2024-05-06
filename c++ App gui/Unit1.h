@@ -9,6 +9,7 @@
 #include <Vcl.Forms.hpp>
 #include <Vcl.ComCtrls.hpp>
 #include <Vcl.ExtCtrls.hpp>
+#include "Domotique.h"
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -28,6 +29,8 @@ __published:	// Composants g�r�s par l'EDI
 	TComboBox *ComboBox1;
 	TEdit *Edit3;
 	TRichEdit *RichEdit1;
+	TLabel *Label1;
+	TLabel *Label2;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Timer1Timer(TObject *Sender);
 	void __fastcall TrackBar1Change(TObject *Sender);
@@ -35,7 +38,8 @@ __published:	// Composants g�r�s par l'EDI
 	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall ComboBox1Change(TObject *Sender);
 private:	// D�clarations utilisateur
-	std::string IPServ;
+	std::string ipServ;
+
 public:		// D�clarations utilisateur
 	__fastcall TForm1(TComponent* Owner);
 };

@@ -8,44 +8,26 @@
 
 int main(){
 	IRClientTCP passDomo;
-
-
-
 	char reponse[10000];
 	std::string AddrIP;
-	std::string CleAPI;
-
+	std::string CleAPI = "988FB76B99";
 	std::cout << "Entrez l'adresse IP : ";
 	std::cin >> AddrIP;
 	std::cout << std::endl;
-
-	std::cout << "Entrez la cle API : ";
-	std::cin >> CleAPI;
-	std::cout << std::endl;
-
-
 	passDomo.SeConnecterAUnServeur(AddrIP,80);
-
-
 	std::string requete ="GET /api/"+CleAPI+"/sensors HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n";
-
-//
-//	std::string requeteLampe ="PUT /api/F276DD7951/lights/3/state HTTP/1.1\r\nHost: 172.20.21.5\r\nConnection: keep-alive\r\n\r\n";
-
 	passDomo.Envoyer(requete.c_str(),requete.length());
 
 
 	int n=passDomo.Recevoir(reponse,10000);
 	reponse[n]=0;
+	std::cout << reponse;
 	std::string reponseString=reponse;
-
-	n= passDomo.Recevoir(reponse,10000);
-	reponse[n]=0;
 	reponseString=reponseString+reponse;
 
 
 
-
+    std::cout << "test ";
 	int debutDonnee = reponseString.find("\r\n\r\n", 0);
 	reponseString= reponseString.substr(debutDonnee+4);
     std::string repString;
@@ -54,31 +36,29 @@ int main(){
 	char rep2[1000];
 
 	while (1){
-
-       int input;
-	  std::cout << "choisissez 1 pour allumer 2 pour eteindre et ailleurs pour quitter)";
-	  std::cin >> input;
-	  std::string repString;
+		std::cout << "test ";
+		int input;
+		std::cout << "choisissez 1 pour allumer 2 pour eteindre et ailleurs pour quitter)";
+		std::cin >> input;
+		std::string repString;
 
 	if (input == 1) {
-			std::string requeteLampe ="PUT /api/"+CleAPI+"/lights/3/state HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n{\"on\": true}";
-			passDomo.Envoyer(requeteLampe.c_str(),requeteLampe.length());
+		std::string requeteLampe ="PUT /api/"+CleAPI+"/lights/1/state HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n{\"on\": true}";
+		passDomo.Envoyer(requeteLampe.c_str(),requeteLampe.length());
 		passDomo.Recevoir(rep2, 1000);
 
 		std::cout << '\n' << '\n' << rep2 ;
 		repString = rep2;
 	}
 	else if (input == 2) {
-				   std::string requeteLampe ="PUT /api/"+CleAPI+"32/lights/3/state HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n{\"on\": false}";
-                   passDomo.Envoyer(requeteLampe.c_str(),requeteLampe.length());
-					passDomo.Recevoir(rep2, 1000);
+		std::string requeteLampe ="PUT /api/"+CleAPI+"/lights/1/state HTTP/1.1\r\nHost: 172.20.21.22\r\nConnection: keep-alive\r\n\r\n{\"on\": false}";
+		passDomo.Envoyer(requeteLampe.c_str(),requeteLampe.length());
+		passDomo.Recevoir(rep2, 1000);
 
-					std::cout << '\n' << '\n' << rep2 ;
-					repString = rep2;
+		std::cout << '\n' << '\n' << rep2 ;
+		repString = rep2;
 		 }
-	else{
-        break;
-    }
+	else       break;
 
 
 	}

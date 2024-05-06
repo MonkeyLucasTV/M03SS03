@@ -122,7 +122,7 @@
         </CppCompile>
         <CppCompile Include="Domotique.cpp">
             <DependentOn>Domotique.h</DependentOn>
-            <BuildOrder>4</BuildOrder>
+            <BuildOrder>9</BuildOrder>
         </CppCompile>
         <CppCompile Include="IRClientTCP.cpp">
             <BuildOrder>5</BuildOrder>

@@ -8,10 +8,12 @@ std::string Domotique::ListeCapteurs()
 {	jSON.Extraction(GetAppareil("sensors"));
 	return jSON.Description();
 }
+
 std::string Domotique::ListeLampes()
 {	jSON.Extraction(GetAppareil("lights"));
 	return jSON.Description();
 }
+
 std::string Domotique::PutAppareil(std::string appareil,std::string etatJSON)
 {	IRClientTCP passerelleDomotic;
 	std::string requete="PUT /api/"+cle+"/"+appareil+"/state HTTP/1.1"+"\r\nHost: "+IP+"\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\r\nContent-Type: application/json\r\nAccept: */*\r\n\r\n";
@@ -28,6 +30,7 @@ std::string Domotique::PutAppareil(std::string appareil,std::string etatJSON)
 	}
 	return "Serveur introuvable";
 }
+
 std::string Domotique::GetAppareil(std::string appareil)
 {   IRClientTCP passerelleDomotic;
 	bool ok=passerelleDomotic.SeConnecterAUnServeur(IP.c_str(),80);
